@@ -56,3 +56,7 @@ html {
   background: url(book4.jpg) no-repeat center fixed; 
   background-size: cover;
 }
+
+.StyleStory{
+    background-color: lightgrey; width: 300px;border: 25px solid #6b6b47;padding: 55px;margin: 25px;
+}

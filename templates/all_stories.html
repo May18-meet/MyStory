@@ -10,6 +10,7 @@
 body {
     font-family: 'Bilbo Swash Caps';font-size: 22px;
 }
+
 </style>
 </head>
 <body>
@@ -37,8 +38,16 @@ body {
 
 </ul>
 <p style="text-align: center; width: 100%"><font size="30">Stories</font></p>
+{% for story in stories %}
+<h3>{{story.name}}
+<div style="background-color: lightgrey; width: 300px;border: 25px solid #6b6b47;padding: 55px;margin: 25px;">
+<h3>{{story.name}}</h3>
+<p>{{story.Story}}</p>
 
 
-
+</div>
+    
+  
+{% endfor %}
 </body>
 </html>

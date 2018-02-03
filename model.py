@@ -15,7 +15,8 @@ class Story(db.Model):
     __tablename__ = "Story"
     id = db.Column('id', db.Integer, primary_key=True)
     name = db.Column('name', db.String)
-    Stort= db.Column('content', db.String)
+    Story= db.Column('content', db.String)
+    #  name = Column(String)
 
     def __init__(self, name, content):
         self.name = name
@@ -27,11 +28,11 @@ class User(db.Model):
     __tablename__="User"
     id=db.Column('id',db.Integer, primary_key=True)
     email=db.Column('email',db.String)
-    Name=db.Column('Name',db.String)
+    name=db.Column('Name',db.String)
     password=db.Column('password',db.Integer)
-    def __init__(self, email, Name, password):
+    def __init__(self, email, name, password):
         self.email = email
-        self.Name = Name
+        self.name = name
         self.password= password
 
 
@@ -59,4 +60,3 @@ if __name__ == '__main__':
 
 engine = create_engine('sqlite:///database.db')
 
-Base.metadata.create_all(engine)
